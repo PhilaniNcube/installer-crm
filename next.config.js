@@ -1,4 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  webpack: (config) => {
+    if (config.name === "server")
+      config.optimization.concatenateModules = false;
 
-module.exports = nextConfig
+    return config;
+  },
+};
+
+module.exports = nextConfig;

@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# What is this project about?
 
-## Getting Started
+This is my attempt to make a minimal crm application geared towards business that provide solar power installations and perhaps other contractors.
 
-First, run the development server:
+## Version 0.0.1
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Building this using NextJS, Tailwindcss and shadcn/ui
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Intended Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Lead Management: CRM software can help in capturing, tracking, qualifying, and managing potential customers for services like solar power and gas geysers installation.
 
-## Learn More
+2. Appointment Scheduling: Appointment management functionality allows installers to schedule, track, and manage appointments with customers, as well as reminders for upcoming appointments.
 
-To learn more about Next.js, take a look at the following resources:
+3. Customer-Service Issues Tracking: A CRM can track and manage customer-service issues, such as repair or maintenance requests, faulty equipment, or follow-ups necessary post-installation.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Document Management: CRM software can store crucial customer documents such as quotes, contracts, invoices and installation reports which can be accessed whenever required.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+5. Mobile Access: Given the onsite requirements of such activities, having mobile access to the CRM can provide real-time customer information, project updates, and more to installers on the job.
 
-## Deploy on Vercel
+6. Task Management: A CRM can help manage and assign tasks to specific installers or teams and track the progress until the job's completion.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+7. Integration with Accounting Software: This feature allows for easy tracking of budgets, invoices, payments, and overall financial analysis.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+8. Sales Forecasts: The CRM can use gathered data to identify potential future sales trends and opportunities for the installation business.
+
+9. Customer Segmentation: CRM can segment customers based on multiple criteria like their needs, preferences, or behavior allowing personalised marketing and services.
+
+10. Communication Management: It can track and manage all communications with a customer, whether via email, phone calls, or social media.
+
+11. Project Management: The system tracks the progress of installation projects to ensure they are completed on time and within budget.
+
+12. Inventory Management: CRM integrates with inventory systems to monitor the availability and requirements of hardware and installation equipment.
+
+13. Reporting and Analytics: The software can provide detailed reports and data-driven insights to make informed business decisions.
+
+14. Contract Management: The CRM can keep track of all contracts with customers, including renewals, terms, and conditions, etc.
+
+15. Customer Satisfaction Surveys: Post-installation, CRM can manage customer satisfaction surveys to gather feedback and improve services.
