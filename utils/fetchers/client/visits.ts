@@ -52,6 +52,31 @@ const supabase = createClient();
 }
 
 
+export async function fetchVisitsById(id:string) {
+const supabase = createClient();
+
+  // create query to get visits with a join on the leads table and contractors table
+  const visitsQuery = supabase
+    .from("site_visits")
+    .select(
+      `id,date,status,leads( id, first_name, last_name, email, phone, address, city, status),
+      contractors( id, first_name, last_name, email, phone, city)`
+    ).eq('id', id)
+    .order("date", { ascending: true }).single();
+
+    // generate th type from the visits query
+    type Visits = QueryData<typeof visitsQuery>;
+
+    const {data:visits, error} = await visitsQuery
+
+    if (error) {
+       throw new Error(error.message);
+    }
+
+    return visits
+}
+
+
 export async function fetchVisitsByContractorId(contractorId:string) {
 const supabase = createClient();
 

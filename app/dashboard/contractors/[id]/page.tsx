@@ -4,6 +4,7 @@ import { Separator } from "@/components/ui/separator";
 import { createClient } from "@/utils/supabase/server";
 import { cookies } from "next/headers";
 import SiteVisits from "../_components/site-visits";
+import SiteVisit from "../_components/site-visit";
 
 const ContractorPage = async ({params:{id}}:{params:{id:string}}) => {
 
@@ -42,6 +43,7 @@ const ContractorPage = async ({params:{id}}:{params:{id:string}}) => {
         ) : (
           <SiteVisits site_visits={site_visits} />
         )}
+        <SiteVisit />
       </div>
 
       <ScrollBar />
