@@ -1,8 +1,21 @@
 import { Button } from '@/components/ui/button'
+import { createClient } from '@/utils/supabase/server';
+import { cookies } from 'next/headers';
 import Image from 'next/image'
 import Link from 'next/link';
+import { redirect } from 'next/navigation';
 
-export default function Home() {
+export default async function Home() {
+
+  const cookieStore = cookies()
+  const supabase = createClient(cookieStore)
+
+  const {data: {session}} = await supabase.auth.getSession()
+
+  if(session) {
+    redirect("/dashboard")
+  }
+
   return (
     <main className="flex min-h-screen flex-col items-center p-24">
       <div className="sm:mx-auto sm:w-full sm:max-w-md mb-10">

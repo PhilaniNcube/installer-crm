@@ -33,7 +33,7 @@ const SiteVisit = () => {
   if (isLoading || isPending) {
     return (
       <Card>
-        <CardContent>
+        <CardContent className="py-3 p-2">
           <div className="animate-pulse flex flex-col space-y-2">
             <div className="h-4 bg-gray-200 rounded w-1/2"></div>
             <div className="space-y-2">
