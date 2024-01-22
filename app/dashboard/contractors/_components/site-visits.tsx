@@ -23,7 +23,7 @@ const SiteVisits = ({ site_visits }: SiteVisitsProps) => {
             <p className="text-md text-gray-600 font-medium">{format(site_visit.date, "PP")}</p>
             <p className="text-sm uppercase">{site_visit.status}</p>
             </div>
-            <Link href={`/dashboard/site-visits/${site_visit.id}`}>
+            <Link href={`/dashboard/contractors/${site_visit.contractor_id}?site_id=${site_visit.id}`}>
               <Button variant="outline" className="text-sm flex space-x-3">View
               <EyeIcon className="ml-2" />
               </Button>
